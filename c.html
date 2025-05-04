@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroPrime | Premium Agricultural Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+
+      *{
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      }
+
+      .glass-panel:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 56px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-carousel {
+        animation: slide 20s infinite ease-in-out;
+      }
+
+      @keyframes slide {
+        0%,
+        20% {
+          background-image: url("kebun.jpg");
+        }
+        25%,
+        45% {
+          background-image: url("kebun2.jpg");
+        }
+        50%,
+        70% {
+          background-image: url("kebun3.jpg");
+        }
+        75%,
+        95% {
+          background-image: url("kebun4.jpg");
+        }
+      }
+
+      .stat-card {
+        transition: all 0.4s ease;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 40px rgba(39, 174, 96, 0.15);
+      }
+
+      .service-icon {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      }
+
+      .service-card:hover .service-icon {
+        transform: scale(1.1) rotate(5deg);
+        background: linear-gradient(135deg, #166534 0%, #27ae60 100%);
+        color: white;
+      }
+
+      .product-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      }
+
+      .product-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .testimonial-card {
+        transition: all 0.4s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #166534 0%, #27ae60 100%);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(39, 174, 96, 0.3);
+      }
+
+      .btn-secondary {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      }
+
+      .btn-secondary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, #166534 0%, #27ae60 100%);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800 antialiased">
+    <!-- Premium Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+             
+              <span class="ml-2 text-2xl font-bold text-gray-900"
+                >Aliansi <span class="text-green-600">Petani Mandiri</span></span
+              >
+            </div>
+          </div>
+          <div class="hidden lg:ml-10 lg:flex lg:items-center lg:space-x-8">
+            <a href="#beranda" class="nav-link text-gray-900 px-3 py-2 font-medium"
+              >Beranda</a
+            >
+             <a
+              href="#program"
+              class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 font-medium"
+              >Program</a
+            >
+             <a
+              href="#tentang"
+              class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 font-medium"
+              >Tentang Kami</a
+            >
+            <a
+              href="#artikel"
+              class="nav-link text-gray-600 hover:text-gray-900 px-3 py-2 font-medium"
+              >Artikel</a
+            >
+           
+           
+            <button
+              class="ml-6 btn-primary text-white px-6 py-3 rounded-lg font-medium"
+            >
+              Login
+            </button>
+          </div>
+          <div class="-mr-2 flex items-center lg:hidden">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-900 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Luxurious Hero Section with Carousel -->
+    <div id="beranda"
+      class="hero-carousel relative pt-24 pb-32 bg-cover bg-center bg-no-repeat min-h-screen flex items-center"
+    >
+      <div class="absolute inset-0 hero-gradient"></div>
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
+        <div class="glass-panel max-w-2xl rounded-2xl p-10 text-white">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            Elevating <span class="text-green-300">Agriculture</span> Through
+            Innovation
+          </h1>
+          <p class="text-xl mb-8 opacity-90">
+            Premium solutions for modern farming. Harness cutting-edge
+            technology to maximize yield while preserving our planet's
+            resources.
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+        <svg
+          class="h-8 w-8 text-white animate-bounce"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Premium Stats Section -->
+    <div class="relative -mt-20 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 z-20">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div
+          class="stat-card bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl"
+        >
+          <div class="text-4xl font-bold text-green-600 mb-3">15K+</div>
+          <div
+            class="text-gray-600 uppercase tracking-wider text-sm font-medium"
+          >
+            Successful Projects
+          </div>
+        </div>
+        <div
+          class="stat-card bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl"
+        >
+          <div class="text-4xl font-bold text-green-600 mb-3">25+</div>
+          <div
+            class="text-gray-600 uppercase tracking-wider text-sm font-medium"
+          >
+            Years Experience
+          </div>
+        </div>
+        <div
+          class="stat-card bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl"
+        >
+          <div class="text-4xl font-bold text-green-600 mb-3">45+</div>
+          <div
+            class="text-gray-600 uppercase tracking-wider text-sm font-medium"
+          >
+            Patented Technologies
+          </div>
+        </div>
+        <div
+          class="stat-card bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl"
+        >
+          <div class="text-4xl font-bold text-green-600 mb-3">98%</div>
+          <div
+            class="text-gray-600 uppercase tracking-wider text-sm font-medium"
+          >
+            Client Satisfaction
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Premium Solutions Section -->
+    <section class="py-24 bg-white" id="program">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div class="text-center mb-20">
+          <span class="text-green-600 font-medium uppercase tracking-wider"
+            >Our Solutions</span
+          >
+          <h2 class="text-4xl font-bold text-gray-900 mt-3 mb-6">
+            Transforming <span class="text-green-600">Agriculture</span> with
+            Technology
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Innovative solutions designed to address the most pressing
+            challenges in modern agriculture
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="glass-panel rounded-2xl p-8">
+            <div
+              class="service-icon bg-green-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 text-green-600"
+            >
+              <svg
+                class="w-10 h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Precision Soil Analysis
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Advanced soil testing with AI-powered recommendations for optimal
+              fertilization strategies and crop selection.
+            </p>
+            <a
+              href="#"
+              class="text-green-600 hover:text-green-800 font-medium flex items-center"
+            >
+              Learn more
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="glass-panel rounded-2xl p-8">
+            <div
+              class="service-icon bg-green-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 text-green-600"
+            >
+              <svg
+                class="w-10 h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Smart Irrigation Systems
+            </h3>
+            <p class="text-gray-600 mb-6">
+              IoT-enabled irrigation that adapts to weather forecasts and soil
+              conditions in real-time, reducing water waste.
+            </p>
+            <a
+              href="#"
+              class="text-green-600 hover:text-green-800 font-medium flex items-center"
+            >
+              Learn more
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="glass-panel rounded-2xl p-8">
+            <div
+              class="service-icon bg-green-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 text-green-600"
+            >
+              <svg
+                class="w-10 h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Drone Crop Monitoring
+            </h3>
+            <p class="text-gray-600 mb-6">
+              High-resolution aerial imaging with AI analysis to detect plant
+              stress, disease, and nutrient deficiencies early.
+            </p>
+            <a
+              href="#"
+              class="text-green-600 hover:text-green-800 font-medium flex items-center"
+            >
+              Learn more
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Showcase -->
+    <section class="py-24 bg-gray-50" id="tentang">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+            <span class="text-green-600 font-medium uppercase tracking-wider"
+              >Our Technology</span
+            >
+            <h2 class="text-4xl font-bold text-gray-900 mt-3 mb-6">
+              The Future of
+              <span class="text-green-600">Sustainable</span> Farming
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+              Our proprietary technology platform combines satellite data,
+              weather patterns, and machine learning to deliver actionable
+              insights for your farm.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-green-100 text-green-600"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-gray-900">
+                    Real-time Analytics
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Monitor your fields with up-to-the-minute data and
+                    predictive analytics.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-green-100 text-green-600"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-gray-900">Custom Alerts</h4>
+                  <p class="text-gray-600 mt-1">
+                    Get notified about potential issues before they impact your
+                    yield.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-lg bg-green-100 text-green-600"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-gray-900">
+                    Sustainability Metrics
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Track and improve your environmental impact with detailed
+                    reports.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="glass-panel rounded-2xl overflow-hidden">
+              <div
+                class="aspect-w-16 aspect-h-9 bg-gray-100 flex items-center justify-center p-8"
+              >
+                <img src="kebun.jpg" alt="" srcset="" />
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  AgroPrime Dashboard
+                </h3>
+                <p class="text-gray-600">
+                  Our intuitive interface puts powerful agricultural analytics
+                  at your fingertips.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+        <section class="py-24 bg-gray-50" id="artikel">
+          <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10">
+           
+
+            <div class="text-center mt-12">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">
+                Related Articles
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                  class="bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow"
+                >
+                  <img
+                    src="kebun.jpg"
+                    alt="Article thumbnail"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div class="p-5">
+                    <h4 class="font-medium text-gray-900 mb-2">
+                      Water Conservation Techniques for Dry Climates
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-3">
+                      Strategies to maximize water efficiency in arid regions
+                    </p>
+                    <a
+                      href="#"
+                      class="text-green-600 text-sm font-medium hover:text-green-700"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow"
+                >
+                  <img
+                    src="kebun2.jpg"
+                    alt="Article thumbnail"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div class="p-5">
+                    <h4 class="font-medium text-gray-900 mb-2">
+                      The Rise of Vertical Farming in Urban Areas
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-3">
+                      How cities are becoming agricultural powerhouses
+                    </p>
+                    <a
+                      href="#"
+                      class="text-green-600 text-sm font-medium hover:text-green-700"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow"
+                >
+                  <img
+                    src="kebun3.jpg"
+                    alt="Article thumbnail"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div class="p-5">
+                    <h4 class="font-medium text-gray-900 mb-2">
+                      Ancient Farming Wisdom for Modern Challenges
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-3">
+                      Learning from traditional agricultural practices
+                    </p>
+                    <a
+                      href="#"
+                      class="text-green-600 text-sm font-medium hover:text-green-700"
+                      >Read more →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-24 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center mb-20">
+              <span class="text-green-600 font-medium uppercase tracking-wider"
+                >Testimonials</span
+              >
+              <h2 class="text-4xl font-bold text-gray-900 mt-3 mb-6">
+                Trusted by
+                <span class="text-green-600">Agricultural Leaders</span>
+              </h2>
+              <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Hear from farmers and agribusiness professionals who use our
+                solutions
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-lg"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl"
+                  >
+                    JD
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-gray-900">John Dawson</h4>
+                    <p class="text-gray-600 text-sm">Corn Farmer, Iowa</p>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                  "The precision farming tools increased our yield by 22% while
+                  reducing water usage by 15%. The ROI was evident within the
+                  first season."
+                </p>
+                <div class="flex text-yellow-400">★ ★ ★ ★ ★</div>
+              </div>
+
+              <div
+                class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-lg"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl"
+                  >
+                    MS
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-gray-900">Maria Sanchez</h4>
+                    <p class="text-gray-600 text-sm">
+                      Vineyard Owner, California
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                  "Their organic fertilizers transformed our soil quality. Our
+                  grapes have never been healthier, and we've reduced chemical
+                  inputs by 40%."
+                </p>
+                <div class="flex text-yellow-400">★ ★ ★ ★ ★</div>
+              </div>
+
+              <div
+                class="testimonial-card bg-white rounded-2xl p-8 shadow-md hover:shadow-lg"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl"
+                  >
+                    RT
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-gray-900">Robert Taylor</h4>
+                    <p class="text-gray-600 text-sm">Wheat Farmer, Kansas</p>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                  "The crop monitoring service helped us detect a fungal
+                  infection two weeks before visible symptoms, saving our entire
+                  season's harvest."
+                </p>
+                <div class="flex text-yellow-400">★ ★ ★ ★ ★</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+      
+
+        <!-- Premium Footer -->
+        <footer class="bg-gray-900 text-white pt-24 pb-12">
+          <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12">
+              <div class="md:col-span-2">
+                <div class="flex items-center mb-6">
+                  <svg
+                    class="h-9 w-9 text-green-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="ml-2 text-2xl font-bold"
+                    >Agro<span class="text-green-400">Prime</span></span
+                  >
+                </div>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                  Premium agricultural solutions combining cutting-edge
+                  technology with sustainable practices to revolutionize modern
+                  farming.
+                </p>
+                <div class="flex space-x-5">
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3
+                  class="text-lg font-semibold mb-6 uppercase tracking-wider text-gray-300"
+                >
+                  Company
+                </h3>
+                <ul class="space-y-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Our Team</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Press</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3
+                  class="text-lg font-semibold mb-6 uppercase tracking-wider text-gray-300"
+                >
+                  Solutions
+                </h3>
+                <ul class="space-y-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Precision Farming</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Soil Health</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Water Management</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Crop Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-white transition duration-300"
+                      >Sustainability</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3
+                  class="text-lg font-semibold mb-6 uppercase tracking-wider text-gray-300"
+                >
+                  Contact
+                </h3>
+                <address class="text-gray-400 not-italic space-y-3">
+                  <p class="flex items-start">
+                    <svg
+                      class="w-5 h-5 mr-3 mt-0.5 text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                    123 Agriculture Avenue<br />Farmington, CA 12345
+                  </p>
+                  <p class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-3 text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                    (123) 456-7890
+                  </p>
+                  <p class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-3 text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    info@agroprime.com
+                  </p>
+                </address>
+              </div>
+            </div>
+
+            <div
+              class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center"
+            >
+              <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                &copy; 2023 AgroPrime. All rights reserved.
+              </p>
+              <div class="flex space-x-6">
+                <a href="#" class="text-gray-500 hover:text-gray-400 text-sm"
+                  >Privacy Policy</a
+                >
+                <a href="#" class="text-gray-500 hover:text-gray-400 text-sm"
+                  >Terms of Service</a
+                >
+                <a href="#" class="text-gray-500 hover:text-gray-400 text-sm"
+                  >Cookie Policy</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>
+  </body>
+</html>
